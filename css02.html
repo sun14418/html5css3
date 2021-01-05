@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>CSS 속성</title>
+        <style>
+            */{margin: 0;padding: 0;}
+            body, html{width: 100%;}
+            ul{list-style: none;}
+            a{text-decoration: none;}
+            .tit{line-height: 90px; padding-top: 40px; padding-left: 28px;}
+            .wrap{clear: both; width: 100%;}
+            .page_tit{float: none; clear: both; line-height: 80px; padding-top: 24px; padding-left: 28px;}
+            .comment{padding: 28px}
+            .lst{float: none; clear: both; height: 600px}
+            .sta li {position: static; float: left}
+            .rel li {position: relative; float: left}
+            .abs {position: relative; width: 100%; overflow:scroll}
+            .abs li {position: absolute;}
+            .abs li:first-child {top:50px; left:50px;}
+            .abs li:nth-child(2) {top:200px; left: 200px;}
+            .abs li:nth-child(3) {top: 400px; left: 400px;}
+            .abs li:last-child {bottom: 100px; right: 100px}
+            .fix {position: relative;}
+            .fix li {position: fixed;}
+            .fix li:first-child {top: 200px; right: 50px;}
+            .fix li:nth-child(2) {top: 400px; right: 300px; z-index: 1;}
+            .fix li:nth-child(3) {top: 600px; right: 550px;}
+            .fix li:last-child {bottom: 100px; left: 100px;}
+            
+        </style>
+    </head>
+    <body>
+        <h2 class="tit">위치 관련 속성</h2>   
+        <div class="wrap">
+            <h3 class="page_tit">position:static</h3>
+            <p class="comment">포지션이 설정되지 않으면, 기본적으로 static임. 정적인 배치방법으로 별도의 스타일이 없으면, 그대로 위에서 아래로 콘텐츠가 배치되며, float(흐름방향), clear(흐름해제), margin(바깥여백), padding(안여백) 속성을 활용하여 배치</p>
+            <ul class="lst sta">
+                <li><a href=""><img src="http://placehold.it/300x500/222" alt=""></a></li>
+                <li><a href=""><img src="http://placehold.it/300x500/444" alt=""></a></li>
+                <li><a href=""><img src="http://placehold.it/300x500/666" alt=""></a></li>
+                <li><a href=""><img src="http://placehold.it/300x500/888" alt=""></a></li>
+            </ul>
+        </div>
+        <hr>
+        <div class="wrap">
+            <h3 class="page_tit">position:relative</h3>
+            <p class="comment">포지션이 relative이면 상대적인 배치방법 별도의 지시가 없는 한 그대로 위에서 아래로 콘텐츠가 배치되며 내부 요소가 absolute일 경우 부모를 기준점으로 하려고 할 경우 사용, float(흐름방향), clear(흐름해제), margin(바깥여백), padding(안여백) 속성을 활용하여 배치</p>
+            <ul class="lst rel">
+                <li><a href=""><img src="http://placehold.it/300x500/fc0" alt=""></a></li>
+                <li><a href=""><img src="http://placehold.it/300x500/fd0" alt=""></a></li>
+                <li><a href=""><img src="http://placehold.it/300x500/fe0" alt=""></a></li>
+                <li><a href=""><img src="http://placehold.it/300x500/ff0" alt=""></a></li>
+            </ul>
+        </div>
+        <hr>
+        <div class="wrap">
+            <h3 class="page_tit">position:absolute</h3>
+            <p class="comment">포지션이 absolute이면 절대적인 배치방법으로 정해진 좌표값에 의해 배치, top, bottom, left, right와 z-index를 사용하며, 부모요소를 기준으로 하고자 할 경우 그 부모에 position:relative로 하고, 부모에 크기를 준다.</p>
+            <ul class="lst abs">
+                <li><a href=""><img src="http://placehold.it/300x500/s10" alt=""></a></li>
+                <li><a href=""><img src="http://placehold.it/300x500/s30" alt=""></a></li>
+                <li><a href=""><img src="http://placehold.it/300x500/s70" alt=""></a></li>
+                <li><a href=""><img src="http://placehold.it/300x500/s90" alt=""></a></li>
+            </ul>
+        </div>
+        <hr>
+        <div class="wrap">
+            <h3 class="page_tit">position:fixed</h3>
+            <p class="comment">포지션이 fixed이면 고정적인 배치방법으로 정해진 좌표값에 의해 화면에 고정하여 배치, top, bottom, left, right와 z-index를 사용</p>
+            <ul class="lst fix">
+                <li><a href=""><img src="http://placehold.it/300x500/ft0" alt=""></a></li>
+                <li><a href=""><img src="http://placehold.it/300x500/fa0" alt=""></a></li>
+                <li><a href=""><img src="http://placehold.it/300x500/fe0" alt=""></a></li>
+                <li><a href=""><img src="http://placehold.it/300x500/bu0" alt=""></a></li>
+            </ul>
+        </div>
+    </body>
+</html>

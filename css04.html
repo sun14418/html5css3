@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS 속성3 - color, text-align정렬, direction텍스트방향 , line-height행높이, letter-spacing자간, text-transform영문-대소문자변환, text-decoration문자장식, text-overflow정해진 크기밖으로 넘치는 문자 처리방식(어쩌구저...), text-indent들여쓰기/내어쓰기, white-space한줄처리방법, word-spacing어간(단어사이간격), word-wrap단어보호(스크롤또는 화면크기변환시 자동줄바꿈에 끊기는 단어를 보호하는 것), text-shadow글자그림자, @font-face글꼴추출(@엣기호는 규칙), font-family글꼴, writing-mode글자방향가로쓰기 세로쓰기, font-weight글꼴두께, font-style기울임꼴, font-size글자크기, font-variant문자의 폭(주로 영문에 사용)</title>
+    <style>
+        body, html{font-size:24px; color:#f0ae59;}
+    </style>
+</head>
+<body>
+    <h2 class="tit">문단/글자 모양 속성</h2>
+    <div class="wrap">
+        <h3 class="page_tit">문단 모양 관련 속성</h3>
+            <p class="comment">
+                color, text-align, direction, line-height, letter-spacing, text-transform, test-decoration, text-overflow, text-indent, white-space, word-spacing, word-wrap, word-break
+            </p>
+        <h4 class="item_tit">color(글자색)</h4>
+            <p class="comment">
+                color:256컬러명(안전컬러 216색), 16진코드-3자리 또는 6자리, rgb(red,green, blue)-가산기법/빛을 쌓아 만드는 색, hsl(hue, saturation, lightness-포토샵에서는 brightness), rgba(rgb+알파), hsla(hsl+알파) | a(알파)=opacity(불투명도)/글자색만 투명도를 조절할때 a를 붙인다. 
+            </p><br>
+        <h4 class="item_tit">text-align</h4>
+           <p class="comment">
+                text-align:left|right|center|justify|start|end
+            </p><br>
+        <h4 class="item_tit">direction(진행방향)</h4>
+           <p class="comment">
+                ltr(left to right) | rtl(right to left)
+            </p><br>
+        <h4 class="item_tit">line-height(행높이)</h4>
+           <p class="comment">
+                문법<br>
+                line-height:글자크기배수(160%>1.6), px단위, pt단위, %단위 등
+                폰트사이즈에서 배수를 할 때는 em이라는 단위를 붙여야한다.
+            </p><br>
+        <h4 class="item_tit">letter-spacing(자간)</h4>
+           <p class="comment">
+                문법<br>
+                letter-spacing: px단위, pt단위 등
+            </p><br>
+        <h4 class="item_tit">text-transform</h4>
+            <p class="comment">
+               문법<br>
+                none 기본
+                upperscape:대문자로 변환
+                lowerscape:소문자로 변환
+                capitalize:첫글자만 대문자                
+            </p><br>
+        <h4 class="item_tit">text-decoration(줄장식)</h4>
+           <p class="comment">
+                문법<br>
+                none 기본
+                a태그는 underline이 기본값이기 때문에 none으로 기본을 바꿔줘야한다.
+                underline:글자아래줄 | overline:글자위에줄
+                line-through:굴자 중간을 가로지르는 줄
+            </p><br>        
+    </div>
+</body>
+</html>
